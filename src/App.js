@@ -1,7 +1,7 @@
 import React from 'react';
 import List from './List.js';
-import './store.js';
-import storeObject from './store.js';
+import store from './STORE.js';
+import "./App.css";
 
 function App(props) {
   return (
@@ -14,7 +14,7 @@ function App(props) {
             <List 
               key={list.id}
               header={list.header}
-              cards={list.allCards.map(id => store.allCards[id])}
+              cardIds={list.cardIds.map(id => store.allCards[id])}
             />
         )}
       </div>
