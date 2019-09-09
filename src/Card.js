@@ -1,6 +1,6 @@
 import React from 'react';
 import './Card.css';
-import './store.js';
+import './STORE.js';
 
 export default function Card(props) {
     return (
