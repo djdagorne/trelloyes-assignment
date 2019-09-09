@@ -1,7 +1,6 @@
 import React from 'react';
 
-export default function storeObject(props) {
-    const STORE = {
+export default  {
         lists: [
           {
             id: '1',
@@ -40,4 +39,3 @@ export default function storeObject(props) {
           'm': { id: 'm', title: 'Thirteenth card', content: 'lorem ipsum' },
         },
       };
-}
