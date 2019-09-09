@@ -2,7 +2,7 @@ import React from 'react';
 import './Card.css';
 import './STORE.js';
 
-export default function Card(props) {
+export default function Card(props) {//create individual cards calling on the values of allCards keys
     return (
         <div className="Card">
             <button type="button">delete</button>
