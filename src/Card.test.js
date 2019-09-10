@@ -6,9 +6,9 @@ import Card from './Card.js';
 
 describe('Card component', () => {
     it('render without crashing', () => {
-        ReactDOM.render(<Card />, document.createElement('div'));
+        ReactDOM.render(<Card  />, document.createElement('div'));
         ReactDOM.unmountComponentAtNode(document.createElement('div'));
     });
+ 
 
-    
 });
