@@ -27,13 +27,25 @@ class App extends Component {
     store: STORE,
   };
 
-  handleDeleteCard = (cardId) => {
+  handleDeleteCard = (cardId, listId) => {
+    console.log('deleteing ', cardId + 'inside list with id ', listId)
     const { lists, allCards } = this.state.store;
+    // //if lists.id === listId, map that new list
 
     const newLists = lists.map(list => ({
       ...list,
       cardIds: list.cardIds.filter(id => id !== cardId)
     }));
+
+    // const newLists = lists.map(list => {
+    //   if (listId === list.id){
+    //     return {
+    //       ...list,
+    //       cardIds: list.cardIds.filter(id => id !== cardId)
+    //     }
+    //   }
+    //   return list;
+    // })
 
     const newCards = omit(allCards, cardId);
 

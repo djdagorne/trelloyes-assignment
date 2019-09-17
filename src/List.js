@@ -1,6 +1,8 @@
-import React from 'react';
+import React from 'react'
 import Card from './Card'
-import './List.css';
+import './List.css'
+
+
 export default function List(props) {
   return (
     <section className='List'>
@@ -11,6 +13,7 @@ export default function List(props) {
         {props.cards.map((card) =>
           <Card
             key={card.id}
+            listId={props.id}//just a prop to keep track of what list a card is in
             id={card.id}
             title={card.title}
             content={card.content}
