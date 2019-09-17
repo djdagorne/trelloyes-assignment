@@ -1,4 +1,6 @@
 import React from 'react';
+import './App.css';
+import List from './List.js';
 
 function App(props) {
   return (
